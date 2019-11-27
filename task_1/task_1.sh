@@ -15,7 +15,7 @@
 # Recomendation: Don't use on production envirement.
 #
 
-try_count=4 # for task need 10
+try_count=10 # for task need 10, bit for see result use 4
 
 list=$(grep -E "((.*invalid user.*|.*error).*(\[preauth\]|Authentication failure))" "$1" |
  grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}' |
@@ -32,5 +32,4 @@ do
   ADDR=$i
   (iptables -L -n | grep  "DROP .* $ADDR .*" > /dev/null && echo "$ADDR Alredy blocked") ||
   (/sbin/iptables -t filter -I INPUT -s "$ADDR" -j DROP && echo "$ADDR Added to iptables DROP rule")
-
 done
