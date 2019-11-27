@@ -5,7 +5,7 @@
 # Usage: For execute need permission for iptable managment
 #        add execute permission for script,
 #        run script with PATH_TO_LOG_FILE parameters
-# Example: ./task_1 test.log
+# Example: ./task_1.sh test.log
 # Description: Script try to find lines like:
 #                   Connection closed by invalid user tplink 5.188.10.176 port 43464 [preauth]
 #                   error: PAM: Authentication failure for root from 61.177.172.188
