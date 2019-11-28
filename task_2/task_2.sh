@@ -5,7 +5,7 @@
 # Usage: add execute permission for script,
 #        run script
 # Example: ./task_2.sh
-# Recomendation: Don't use on production envirement.
+# Recomendation: Don't use in production envirement.
 #
 
 

@@ -11,8 +11,7 @@
 #                   error: PAM: Authentication failure for root from 61.177.172.188
 #                   error: maximum authentication attempts exceeded for root from 61.177.172.188 port 44714 ssh2 [preauth]
 #              counts them, and if counts > $try_count added them to iptables INPUT chain target DROP
-#
-# Recomendation: Don't use on production envirement.
+# Recomendation: Don't use in production envirement.
 #
 
 try_count=10 # for task need 10, bit for see result use 4
